@@ -10,6 +10,18 @@ Saarbrücken: Max-Planck-Institut für Informatik.](https://pure.mpg.de/pubman/f
 
 Given a list of line segments in 2D, the algorithm finds all their pairwise intersections. In contrast to the classical [Bentely-Ottmann](https://en.wikipedia.org/wiki/Bentley%E2%80%93Ottmann_algorithm) algorithm, segments are allowed to be vertical, several segments may intersect in the same point, endpoints of segments my lie on other segments or may be common with their endpoints.
 
+## Demo
+The demo uses the _matplotlib_ library to visualize the results.
+Install it first:
+```
+pip install matplotlib
+```
+Then run the demo:
+```
+cd /path/to/sweep_intersector
+python demo.py
+```
+
 ## Usage
 The whole work is done by the method `findIntersections()` of the class `SweepIntersector`:
 
